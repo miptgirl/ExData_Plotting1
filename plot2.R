@@ -11,5 +11,5 @@ data = mutate(data, datetime = dmy_hms(paste(data$Date, data$Time, sep = " ")))
 
 #creating plot2
 png(file = "plot2.png", bg = "white", width = 480, height = 480)
-plot(data$datetime, data$Global_active_power, ylab = "Global Active Power (kilowatts)", main = "", type = "l")
+plot(data$datetime, data$Global_active_power, ylab = "Global Active Power (kilowatts)", main = "", type = “l”, slab = “”)
 dev.off()
